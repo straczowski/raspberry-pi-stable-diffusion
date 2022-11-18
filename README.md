@@ -1,5 +1,13 @@
 # How to run Stable Diffusion on Raspberry Pi 4
 
+*Example* *Output*
+
+```
+a black tree with golden leaves painted by Monet, autumn
+```
+
+![Black Tree with golden leaves](/imgs/tree.png?raw=true "Black Tree with golden leaves")
+
 first of all i have to say that this is for sure not the most convinient way to run Stable Diffusion. The Raspberry's 8GB RAM are below the recommended 12GB minimum RAM. And the CPU is so slow that a 400x400 px image takes ~45 minutes to be ready.
 
 ### so why we are doing this?
@@ -39,10 +47,11 @@ with all that setup you should be able to run that code
 python app.py
 ```
 
-The most critical part i encountered while booting the model in the beginning. Mostly the process was killed here. 
+The most critical part i encountered while booting the model in the beginning. Mostly the process was killed here. Since the diffuser library supports the `low_cpu_mem_usage` parameter, i got it also running on my Pi
 
-Since the newer version of the diffuser library supports the `low_cpu_mem_usage` parameter, i got it finally running also on the Pi 🥳
+on peaks i measure ~6.3GB RAM usage
 
-happy diffusing!
+![Pi RAM Usage](/imgs/htop-pi.png?raw=true "Pi RAM Usage")
 
+happy diffusing! 🥳
 
