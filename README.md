@@ -16,6 +16,8 @@ Becaus we can. And because both are great technologies. So consider this reposit
 
 ## Prerequisites
 
+running on `Debian GNU/Linux 11 (bullseye)`
+
 1. Having cloned the Stable Diffusion model from Huggingface
 
 i am using currently version 1.5
@@ -26,7 +28,7 @@ git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 ```
 
-2. Having Diffusers Library @7.x.x
+2. Having Diffusers Library @0.7.x
 
 https://pypi.org/project/diffusers/ 
 
